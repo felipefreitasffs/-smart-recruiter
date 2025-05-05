@@ -136,7 +136,7 @@ Se você não estiver usando o VS Code Dev Containers, siga estes passos:
 4. **Criar e Ativar Ambiente Virtual:**
 
    ```bash
-   python -m venv venv
+   ython -m venv venv
    source venv/bin/activate  # Linux/macOS
    # ou
    .\venv\Scripts\activate  # Windows
