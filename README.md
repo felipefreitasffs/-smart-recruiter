@@ -93,7 +93,7 @@ Esta é a forma mais fácil e recomendada para garantir um ambiente consistente,
 
 2.  **Clonar o Repositório:**
     ```bash
-    git clone 
+    git clone [https://github.com/felipefreitasffs/-smart-recruiter.git](https://github.com/felipefreitasffs/-smart-recruiter.git)
     cd smart-recruiter
     ```
 
@@ -126,7 +126,7 @@ Se você não estiver usando o VS Code Dev Containers, siga estes passos:
 
 2.  **Clonar o Repositório:**
     ```bash
-    git clone
+    git clone [https://github.com/felipefreitasffs/-smart-recruiter.git](https://github.com/felipefreitasffs/-smart-recruiter.git)
     cd smart-recruiter
     ```
 
