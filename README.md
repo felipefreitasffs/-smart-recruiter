@@ -27,7 +27,7 @@ Este projeto visa desenvolver um MVP (Minimum Viable Product) de uma solução b
 Os dados utilizados neste projeto foram fornecidos no contexto do Datathon e consistem em três arquivos JSON distintos:
 
 1. **`vagas.json`**: Contém informações detalhadas sobre as vagas de emprego, como ID, título, cliente, requisitos técnicos e comportamentais, localização, tipo de contratação, etc. Estes dados são carregados no DataFrame `df_jobs`.
-2. **`applicants.json`**: Contém informações detalhadas sobre os candidatos (candidatos), incluindo ID, informações pessoais (contato, localização), informações profissionais (título, área, conhecimentos), formação acadêmica, experiências, etc. Estes dados são carregados no DataFrame `df_applicants`.
+2. **`applicants.json`**: Contém informações detalhadas sobre os candidatos, incluindo ID, informações pessoais (contato, localização), informações profissionais (título, área, conhecimentos), formação acadêmica, experiências, etc. Estes dados são carregados no DataFrame `df_applicants`.
 3. **`prospects.json`**: Contém os dados relacionais cruciais que conectam os candidatos (`applicants.json`) às vagas (`vagas.json`). Para cada vaga, lista os candidatos que participaram do processo seletivo, incluindo o status de cada um (`situacao_candidado` - ex: "Encaminhado ao Requisitante", "Desistiu", "Contratado"), datas relevantes e comentários do recrutador. Estes dados são processados e carregados no DataFrame `df_prospects_relationship`, onde cada linha representa uma interação candidato-vaga.
 
 A análise exploratória inicial e o processo de limpeza/preparação destes dados podem ser encontrados nos notebooks Jupyter dentro deste repositório (ex: `notebooks/01_Data_Loading_and_Exploration.ipynb`).
@@ -65,10 +65,11 @@ O repositório está organizado da seguinte forma (sugestão):
 
 ```
 ├── data/                                                        # Pasta para armazenar os dados
-│   └──  raw/                                                    # Dados originais
-│        ├── vagas.json
-│        ├── applicants.json
-│        └── prospects.json
+│   ├── raw/                                                     # Dados originais
+│   │    ├── vagas.json
+│   │    ├── applicants.json
+│   │    └── prospects.json
+│   └── processed/                                               # Dados limpos e transformados
 ├── notebooks/                                                   # Jupyter Notebooks com análises e desenvolvimento
 │   ├── 01_Data_Loading_and_Exploration.ipynb
 │   └── ...
