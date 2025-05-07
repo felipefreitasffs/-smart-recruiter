@@ -39,12 +39,11 @@ A abordagem central deste projeto é a **construção de um modelo de Machine Le
 Os passos principais incluem:
 
 1. **Carregamento e Limpeza dos Dados:** Leitura dos arquivos JSON (`vagas.json`, `applicants.json`, `prospects.json`), tratamento de estruturas aninhadas, tratamento de valores ausentes, correção de inconsistências e formatação dos dados nos DataFrames `df_jobs`, `df_applicants`, e `df_prospects_relationship`.
-2. **Análise Exploratória de Dados (AED):** Investigação profunda dos dados para extrair insights, visualizar distribuições e entender relações entre as variáveis nos três DataFrames e após possíveis junções (merges).
-3. **Engenharia de Atributos:** Criação de novas features relevantes a partir dos dados brutos (ex: extração de skills, cálculo de tempo de experiência, tempo de vaga aberta, codificação de variáveis categóricas). Combinação de informações dos três DataFrames para criar um dataset unificado para modelagem.
-4. **Definição do Problema de ML:** Com base no `df_prospects_relationship` (especialmente a coluna `situacao_candidado`), definir o objetivo do modelo: prever a probabilidade de um candidato ser "Contratado"? Prever se um candidato será "Encaminhado ao Requisitante"? Ou criar um score de "match"?
-5. **Seleção e Treinamento do Modelo:** Escolha de algoritmos de ML adequados (ex: Classificação como Regressão Logística, Random Forest, LightGBM; ou algoritmos de Ranking/Recomendação), treinamento com os dados preparados e ajuste de hiperparâmetros.
-6. **Avaliação do Modelo:** Medição do desempenho do modelo utilizando métricas apropriadas para o problema definido (ex: Acurácia, Precisão, Recall, F1-Score, AUC-ROC, Métricas de Ranking como NDCG).
-7. **Desenvolvimento da Aplicação (MVP):** Criação de uma interface com Streamlit para permitir a interação com o modelo (ex: inserir dados de uma vaga e ver candidatos recomendados com seus scores/status previstos).
+2. **Engenharia de Atributos:** Criação de novas features relevantes a partir dos dados brutos (ex: extração de skills, cálculo de tempo de experiência, tempo de vaga aberta, codificação de variáveis categóricas). Combinação de informações dos três DataFrames para criar um dataset unificado para modelagem.
+3. **Definição do Problema de ML:** Com base no `df_prospects_relationship` (especialmente a coluna `situacao_candidado`), definir o objetivo do modelo: prever a probabilidade de um candidato ser "Contratado"? Prever se um candidato será "Encaminhado ao Requisitante"? Ou criar um score de "match"?
+4. **Seleção e Treinamento do Modelo:** Escolha de algoritmos de ML adequados (ex: Classificação como Regressão Logística, Random Forest, LightGBM; ou algoritmos de Ranking/Recomendação), treinamento com os dados preparados e ajuste de hiperparâmetros.
+5. **Avaliação do Modelo:** Medição do desempenho do modelo utilizando métricas apropriadas para o problema definido (ex: Acurácia, Precisão, Recall, F1-Score, AUC-ROC, Métricas de Ranking como NDCG).
+6. **Desenvolvimento da Aplicação (MVP):** Criação de uma interface com Streamlit para permitir a interação com o modelo (ex: inserir dados de uma vaga e ver candidatos recomendados com seus scores/status previstos).
 
 ## 5. Tecnologias Utilizadas
 
