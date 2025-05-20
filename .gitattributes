@@ -1,2 +1,3 @@
 data/raw/applicants.json filter=lfs diff=lfs merge=lfs -text
 data/processed/prospects_relationship.csv filter=lfs diff=lfs merge=lfs -text
+data/processed/recomendacoes_por_vaga.csv filter=lfs diff=lfs merge=lfs -text

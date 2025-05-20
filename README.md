@@ -40,17 +40,12 @@ Os passos principais incluem:
 1. **Carregamento e Limpeza dos Dados:** Leitura dos arquivos JSON (`vagas.json`, `applicants.json`, `prospects.json`), tratamento de estruturas aninhadas, tratamento de valores ausentes, correção de inconsistências e formatação dos dados nos DataFrames `df_jobs`, `df_applicants`, e `df_prospects_relationship`.
 2. **Engenharia de Atributos:** Criação de novas features relevantes a partir dos dados brutos. Combinação de informações dos três DataFrames para criar um dataset unificado para modelagem.
 3. **Definição do Problema de ML:** Com base no `df_prospects_relationship` (especialmente a coluna `situacao_candidado`), definir a probabilidade de um candidato ser "Contratado".
-4. **Seleção e Treinamento do Modelo:** Escolha de algoritmos de ML adequados, treinamento com os dados preparados e ajuste de hiperparâmetros.
-5. **Avaliação do Modelo:** Medição do desempenho do modelo utilizando métricas apropriadas.
-6. **Desenvolvimento da Aplicação (MVP):** Criação de uma interface com Streamlit para permitir a interação com o modelo.
+4. **Desenvolvimento da Aplicação (MVP):** Criação de uma interface com Streamlit para permitir a interação com o modelo.
 
 ## 5. Tecnologias Utilizadas
 
 * **Linguagem:** Python 3.x
-* **Bibliotecas Principais:**
-  * `pandas`: Manipulação e análise de dados.
-  * `json`: Leitura e processamento de arquivos JSON complexos.
-* **Ambiente:** Jupyter Notebooks (para desenvolvimento e análise), VS Code (ou outro IDE).
+* **Ambiente:** Jupyter Notebooks (para desenvolvimento e análise), VS Code.
 
 ## 6. Estrutura do Projeto
 
@@ -65,10 +60,9 @@ O repositório está organizado da seguinte forma (sugestão):
 │   └── processed/                                               # Dados limpos e transformados
 ├── notebooks/                                                   # Jupyter Notebooks com análises e desenvolvimento
 │   ├── 01_Data_Loading_and_Exploration.ipynb
-│   └── ...
+│   └── 02_Processing.ipynb
 ├── app/                                                         # Código da aplicação Streamlit
-│   ├── smart_recruiter_app.py
-│   └── ... (outros arquivos da app, como modelos salvos)
+│   └── app.py
 └── README.md                                                    # Este arquivo
 ```
 
